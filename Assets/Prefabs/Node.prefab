@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 4991154068740510215}
   - component: {fileID: 1836519161983074224}
   - component: {fileID: 177872568702116290}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Node
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30,8 +30,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 4, y: 4, z: 4}
-  m_ConstrainProportionsScale: 1
+  m_LocalScale: {x: 4, y: 1, z: 4}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -118,7 +118,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4dd16f2423201334ba10e9b6b7e78cfc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hoverColor: {r: 0.97965366, g: 0.990566, b: 0.41585082, a: 0}
-  noMoneyColor: {r: 0.9811321, g: 0.18974723, b: 0.18974723, a: 0}
-  turret: {fileID: 0}
+  _isActive: 0
+  _hoverColor: {r: 0.978183, g: 1, b: 0.031372547, a: 1}
+  _noMoneyColor: {r: 1, g: 0, b: 0, a: 1}
+  _activeColor: {r: 1, g: 1, b: 1, a: 1}
+  _inActiveColor: {r: 0.4566037, g: 0.4505731, b: 0.4505731, a: 1}
   PosOffset: {x: 0, y: 0.5, z: 0}
+  CurrentTurretConfig: {fileID: 0}
+  isUpgraded: 0

@@ -93,7 +93,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3468080046467160448}
-  - component: {fileID: 7757966623222096166}
+  - component: {fileID: 7992333254522108275}
   m_Layer: 0
   m_Name: MissileLauncher
   m_TagString: Untagged
@@ -118,7 +118,7 @@ Transform:
   - {fileID: 2909872733830134696}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7757966623222096166
+--- !u!114 &7992333254522108275
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -127,15 +127,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 4581371927855041163}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2976e973d263a674f9b7768aa2cb7f1f, type: 3}
+  m_Script: {fileID: 11500000, guid: ee6b302271c1aa44d9bf388b2930984b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  range: 30
-  fireRate: 0.25
-  turnSpeed: 10
-  Head: {fileID: 7181661370342005749}
-  Bullet: {fileID: 330483755267974456, guid: 44dd163d859da43419c704f80ab0c532, type: 3}
+  <Config>k__BackingField: {fileID: 11400000, guid: 1999d7b45fbbeee4aacedbaa198170de, type: 2}
+  headToRotate: {fileID: 7181661370342005749}
   firePoint: {fileID: 2606384475172105596}
+  rocketPrefab: {fileID: 330483755267974456, guid: 44dd163d859da43419c704f80ab0c532, type: 3}
 --- !u!1 &5798774747308583549
 GameObject:
   m_ObjectHideFlags: 0

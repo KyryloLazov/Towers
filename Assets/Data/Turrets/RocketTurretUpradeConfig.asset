@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4634c5dda7b489d809990affc02d4ba, type: 3}
+  m_Name: RocketTurretUpradeConfig
+  m_EditorClassIdentifier: 
+  <TurretType>k__BackingField: 1
+  <TurretName>k__BackingField: Rocket
+  <TurretPrefab>k__BackingField: {fileID: 4581371927855041163, guid: 2f6065f4d339e7f4585d46a728fb3251, type: 3}
+  <Cost>k__BackingField: 250
+  <Range>k__BackingField: 15
+  <TurnSpeed>k__BackingField: 10
+  <IsUpgradable>k__BackingField: 0
+  <UpgradeCost>k__BackingField: 0
+  <UpgradedPrefab>k__BackingField: {fileID: 0}
+  fireRate: 0.75
+  Damage: 80
+  <ApproxTargetsInExplosion>k__BackingField: 3

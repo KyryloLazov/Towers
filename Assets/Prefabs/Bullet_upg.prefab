@@ -98,5 +98,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 70
   damage: 70
-  explosionRadius: 0
-  imapctEffect: {fileID: 5123015769255885006, guid: 9015c841fc8a5b1478703aaaff56890e, type: 3}
+  impactEffectPrefab: {fileID: 5123015769255885006, guid: 9015c841fc8a5b1478703aaaff56890e, type: 3}

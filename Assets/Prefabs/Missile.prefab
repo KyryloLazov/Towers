@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6102650130562930739}
-  - component: {fileID: 5799068731676598363}
+  - component: {fileID: -1014591948715643876}
   m_Layer: 0
   m_Name: Missile
   m_TagString: Untagged
@@ -33,7 +33,7 @@ Transform:
   - {fileID: 6477847365056804548}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
---- !u!114 &5799068731676598363
+--- !u!114 &-1014591948715643876
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -42,12 +42,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 330483755267974456}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ed2e1b5cb1f12ec4ebf40b06d74b082a, type: 3}
+  m_Script: {fileID: 11500000, guid: c9fe0857b12e80045a4dda217f222dd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 30
-  explosionRadius: 8
-  imapctEffect: {fileID: 3215075776218287897, guid: 9bb298b6e47f6bc4faac0ab2810e9afd, type: 3}
+  speed: 70
+  damage: 50
+  impactEffectPrefab: {fileID: 3215075776218287897, guid: 9bb298b6e47f6bc4faac0ab2810e9afd, type: 3}
+  explosionRadius: 5
 --- !u!1 &3491693258649557753
 GameObject:
   m_ObjectHideFlags: 0

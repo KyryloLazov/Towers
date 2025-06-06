@@ -5,8 +5,13 @@ using UnityEngine;
 [System.Serializable]
 public class Wave
 {
-    public GameObject Default;
-    public GameObject Tanks;
-    public GameObject Roque;
+    public EnemyConfig normalEnemyConfig;
+    public GameObject normalEnemyPrefab;
+
+    public EnemyConfig tankEnemyConfig;
+    public GameObject tankEnemyPrefab;
+
+    public EnemyConfig fastEnemyConfig;
+    public GameObject fastEnemyPrefab;
     public float spawnRate;
 }

@@ -1,0 +1,137 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\User\\Towers\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{69185621-4F06-7128-CD23-F5B74A4142A5}|Assembly-CSharp.csproj|c:\\users\\user\\towers\\assets\\scripts\\wavespawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{69185621-4F06-7128-CD23-F5B74A4142A5}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\wavespawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{69185621-4F06-7128-CD23-F5B74A4142A5}|Assembly-CSharp.csproj|C:\\Users\\User\\Towers\\assets\\scripts\\buildmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{69185621-4F06-7128-CD23-F5B74A4142A5}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\buildmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{69185621-4F06-7128-CD23-F5B74A4142A5}|Assembly-CSharp.csproj|C:\\Users\\User\\Towers\\assets\\scripts\\geneticalgorithm\\wavegenome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{69185621-4F06-7128-CD23-F5B74A4142A5}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\geneticalgorithm\\wavegenome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{69185621-4F06-7128-CD23-F5B74A4142A5}|Assembly-CSharp.csproj|C:\\Users\\User\\Towers\\assets\\scripts\\geneticalgorithm\\towercounts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{69185621-4F06-7128-CD23-F5B74A4142A5}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\geneticalgorithm\\towercounts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{69185621-4F06-7128-CD23-F5B74A4142A5}|Assembly-CSharp.csproj|C:\\Users\\User\\Towers\\assets\\scripts\\geneticalgorithm\\geneticalgorithm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{69185621-4F06-7128-CD23-F5B74A4142A5}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\geneticalgorithm\\geneticalgorithm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{69185621-4F06-7128-CD23-F5B74A4142A5}|Assembly-CSharp.csproj|C:\\Users\\User\\Towers\\assets\\scripts\\turret.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{69185621-4F06-7128-CD23-F5B74A4142A5}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\turret.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{69185621-4F06-7128-CD23-F5B74A4142A5}|Assembly-CSharp.csproj|C:\\Users\\User\\Towers\\assets\\scripts\\wave.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{69185621-4F06-7128-CD23-F5B74A4142A5}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\wave.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "GeneticAlgorithm.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Towers\\Assets\\Scripts\\GeneticAlgorithm\\GeneticAlgorithm.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\GeneticAlgorithm\\GeneticAlgorithm.cs",
+              "ToolTip": "C:\\Users\\User\\Towers\\Assets\\Scripts\\GeneticAlgorithm\\GeneticAlgorithm.cs",
+              "RelativeToolTip": "Assets\\Scripts\\GeneticAlgorithm\\GeneticAlgorithm.cs",
+              "ViewState": "AgIAAK4AAAAAAAAAAAAmwLkAAABdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-22T14:55:48.66Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TowerCounts.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Towers\\Assets\\Scripts\\GeneticAlgorithm\\TowerCounts.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\GeneticAlgorithm\\TowerCounts.cs",
+              "ToolTip": "C:\\Users\\User\\Towers\\Assets\\Scripts\\GeneticAlgorithm\\TowerCounts.cs",
+              "RelativeToolTip": "Assets\\Scripts\\GeneticAlgorithm\\TowerCounts.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAYAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-22T14:55:20.492Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "WaveGenome.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Towers\\Assets\\Scripts\\GeneticAlgorithm\\WaveGenome.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\GeneticAlgorithm\\WaveGenome.cs",
+              "ToolTip": "C:\\Users\\User\\Towers\\Assets\\Scripts\\GeneticAlgorithm\\WaveGenome.cs",
+              "RelativeToolTip": "Assets\\Scripts\\GeneticAlgorithm\\WaveGenome.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAAAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-22T14:54:55.773Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BuildManager.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Towers\\Assets\\Scripts\\BuildManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\BuildManager.cs",
+              "ToolTip": "C:\\Users\\User\\Towers\\Assets\\Scripts\\BuildManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\BuildManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-22T14:51:54.464Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Turret.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Towers\\Assets\\Scripts\\Turret.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Turret.cs",
+              "ToolTip": "C:\\Users\\User\\Towers\\Assets\\Scripts\\Turret.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Turret.cs",
+              "ViewState": "AgIAAGQAAAAAAAAAAAAkwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-22T14:50:45.204Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Wave.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Towers\\Assets\\Scripts\\Wave.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Wave.cs",
+              "ToolTip": "C:\\Users\\User\\Towers\\Assets\\Scripts\\Wave.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Wave.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-22T13:49:35.383Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "WaveSpawner.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Towers\\Assets\\Scripts\\WaveSpawner.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\WaveSpawner.cs",
+              "ToolTip": "C:\\Users\\User\\Towers\\Assets\\Scripts\\WaveSpawner.cs",
+              "RelativeToolTip": "Assets\\Scripts\\WaveSpawner.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-22T13:49:35.57Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

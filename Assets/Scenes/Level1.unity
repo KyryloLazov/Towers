@@ -38,7 +38,6 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2744,39 +2743,55 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eaf1d6bf107e8904ba2e39c09009ec8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  baseCount: 5
-  turretMult: 1.2
+  baseCount: 3
+  turretMult: 1.3
   spawnPoint: {fileID: 1889852864}
   waves:
-  - Default: {fileID: 8182137869418337406, guid: fb62fa690a5b6924facfc4abbeb3c31b, type: 3}
-    Tanks: {fileID: 8182137869418337406, guid: 253f9a36164a01c47b50e1bcc5c2cee4, type: 3}
-    Roque: {fileID: 8182137869418337406, guid: 23a2ba3e8b72de34bb42eb451c29d36d, type: 3}
-    enemyAmount: 5
+  - normalEnemyConfig: {fileID: 11400000, guid: 0ef29222ec549c84e8b9f13b347aa7d8, type: 2}
+    normalEnemyPrefab: {fileID: 8182137869418337406, guid: fb62fa690a5b6924facfc4abbeb3c31b, type: 3}
+    tankEnemyConfig: {fileID: 11400000, guid: eb6d937ba6bd18543b28663ff878e87b, type: 2}
+    tankEnemyPrefab: {fileID: 8182137869418337406, guid: 253f9a36164a01c47b50e1bcc5c2cee4, type: 3}
+    fastEnemyConfig: {fileID: 11400000, guid: b6f1cf438f2ae0648844341609e1d605, type: 2}
+    fastEnemyPrefab: {fileID: 8182137869418337406, guid: 23a2ba3e8b72de34bb42eb451c29d36d, type: 3}
     spawnRate: 2
-  - Default: {fileID: 8182137869418337406, guid: fb62fa690a5b6924facfc4abbeb3c31b, type: 3}
-    Tanks: {fileID: 8182137869418337406, guid: 253f9a36164a01c47b50e1bcc5c2cee4, type: 3}
-    Roque: {fileID: 8182137869418337406, guid: 23a2ba3e8b72de34bb42eb451c29d36d, type: 3}
-    enemyAmount: 6
+  - normalEnemyConfig: {fileID: 11400000, guid: 0ef29222ec549c84e8b9f13b347aa7d8, type: 2}
+    normalEnemyPrefab: {fileID: 8182137869418337406, guid: fb62fa690a5b6924facfc4abbeb3c31b, type: 3}
+    tankEnemyConfig: {fileID: 11400000, guid: b6f1cf438f2ae0648844341609e1d605, type: 2}
+    tankEnemyPrefab: {fileID: 8182137869418337406, guid: 253f9a36164a01c47b50e1bcc5c2cee4, type: 3}
+    fastEnemyConfig: {fileID: 11400000, guid: eb6d937ba6bd18543b28663ff878e87b, type: 2}
+    fastEnemyPrefab: {fileID: 8182137869418337406, guid: 23a2ba3e8b72de34bb42eb451c29d36d, type: 3}
     spawnRate: 3
-  - Default: {fileID: 8182137869418337406, guid: fb62fa690a5b6924facfc4abbeb3c31b, type: 3}
-    Tanks: {fileID: 8182137869418337406, guid: 253f9a36164a01c47b50e1bcc5c2cee4, type: 3}
-    Roque: {fileID: 8182137869418337406, guid: 23a2ba3e8b72de34bb42eb451c29d36d, type: 3}
-    enemyAmount: 7
+  - normalEnemyConfig: {fileID: 11400000, guid: 0ef29222ec549c84e8b9f13b347aa7d8, type: 2}
+    normalEnemyPrefab: {fileID: 8182137869418337406, guid: fb62fa690a5b6924facfc4abbeb3c31b, type: 3}
+    tankEnemyConfig: {fileID: 11400000, guid: b6f1cf438f2ae0648844341609e1d605, type: 2}
+    tankEnemyPrefab: {fileID: 8182137869418337406, guid: 253f9a36164a01c47b50e1bcc5c2cee4, type: 3}
+    fastEnemyConfig: {fileID: 11400000, guid: eb6d937ba6bd18543b28663ff878e87b, type: 2}
+    fastEnemyPrefab: {fileID: 8182137869418337406, guid: 23a2ba3e8b72de34bb42eb451c29d36d, type: 3}
     spawnRate: 4
-  - Default: {fileID: 8182137869418337406, guid: fb62fa690a5b6924facfc4abbeb3c31b, type: 3}
-    Tanks: {fileID: 8182137869418337406, guid: 253f9a36164a01c47b50e1bcc5c2cee4, type: 3}
-    Roque: {fileID: 8182137869418337406, guid: 23a2ba3e8b72de34bb42eb451c29d36d, type: 3}
-    enemyAmount: 8
+  - normalEnemyConfig: {fileID: 11400000, guid: 0ef29222ec549c84e8b9f13b347aa7d8, type: 2}
+    normalEnemyPrefab: {fileID: 8182137869418337406, guid: fb62fa690a5b6924facfc4abbeb3c31b, type: 3}
+    tankEnemyConfig: {fileID: 11400000, guid: b6f1cf438f2ae0648844341609e1d605, type: 2}
+    tankEnemyPrefab: {fileID: 8182137869418337406, guid: 253f9a36164a01c47b50e1bcc5c2cee4, type: 3}
+    fastEnemyConfig: {fileID: 11400000, guid: eb6d937ba6bd18543b28663ff878e87b, type: 2}
+    fastEnemyPrefab: {fileID: 8182137869418337406, guid: 23a2ba3e8b72de34bb42eb451c29d36d, type: 3}
     spawnRate: 5
-  - Default: {fileID: 8182137869418337406, guid: fb62fa690a5b6924facfc4abbeb3c31b, type: 3}
-    Tanks: {fileID: 8182137869418337406, guid: 253f9a36164a01c47b50e1bcc5c2cee4, type: 3}
-    Roque: {fileID: 8182137869418337406, guid: 23a2ba3e8b72de34bb42eb451c29d36d, type: 3}
-    enemyAmount: 8
+  - normalEnemyConfig: {fileID: 11400000, guid: 0ef29222ec549c84e8b9f13b347aa7d8, type: 2}
+    normalEnemyPrefab: {fileID: 8182137869418337406, guid: fb62fa690a5b6924facfc4abbeb3c31b, type: 3}
+    tankEnemyConfig: {fileID: 11400000, guid: b6f1cf438f2ae0648844341609e1d605, type: 2}
+    tankEnemyPrefab: {fileID: 8182137869418337406, guid: 253f9a36164a01c47b50e1bcc5c2cee4, type: 3}
+    fastEnemyConfig: {fileID: 11400000, guid: eb6d937ba6bd18543b28663ff878e87b, type: 2}
+    fastEnemyPrefab: {fileID: 8182137869418337406, guid: 23a2ba3e8b72de34bb42eb451c29d36d, type: 3}
     spawnRate: 6
   WaveCountdown: {fileID: 1699169941}
   manager: {fileID: 248353379}
-  timeBetweenWaves: 4
+  buildManager: {fileID: 248353377}
+  waypointParent: {fileID: 1030566297}
+  timeBetweenWaves: 8
   WaveNumber: 0
+  populationSize: 20
+  generations: 15
+  mutationRate: 0.1
+  waveMaxIndividualEnemies: 15
 --- !u!4 &248353376
 Transform:
   m_ObjectHideFlags: 0
@@ -2820,7 +2835,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e396f2f1f535494384c588e016ad8dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  StartMoney: 700
+  StartMoney: 500
   Rounds: 0
   LivesText: {fileID: 2003824155}
   MoneyText: {fileID: 122485753}
@@ -3008,6 +3023,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 393182565}
     m_Modifications:
+    - target: {fileID: 177872568702116290, guid: 967f627ace8d8664591d7fba885115bf, type: 3}
+      propertyPath: _isActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 245717915202961358, guid: 967f627ace8d8664591d7fba885115bf, type: 3}
       propertyPath: m_LocalScale.y
       value: 1
@@ -3882,6 +3901,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 393182565}
     m_Modifications:
+    - target: {fileID: 177872568702116290, guid: 967f627ace8d8664591d7fba885115bf, type: 3}
+      propertyPath: _isActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 245717915202961358, guid: 967f627ace8d8664591d7fba885115bf, type: 3}
       propertyPath: m_LocalScale.y
       value: 1
@@ -6934,10 +6957,10 @@ RectTransform:
   - {fileID: 976012802}
   m_Father: {fileID: 1742027899}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0.000030518}
-  m_SizeDelta: {x: 1068, y: 475}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &647009718
 MonoBehaviour:
@@ -8014,6 +8037,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 393182565}
     m_Modifications:
+    - target: {fileID: 177872568702116290, guid: 967f627ace8d8664591d7fba885115bf, type: 3}
+      propertyPath: _isActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 245717915202961358, guid: 967f627ace8d8664591d7fba885115bf, type: 3}
       propertyPath: m_LocalScale.y
       value: 1
@@ -8746,7 +8773,6 @@ GameObject:
   - component: {fileID: 808721939}
   - component: {fileID: 808721938}
   - component: {fileID: 808721937}
-  - component: {fileID: 808721940}
   m_Layer: 5
   m_Name: Shop
   m_TagString: Untagged
@@ -8773,7 +8799,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -3.8327026, y: 50.43921}
+  m_AnchoredPosition: {x: -3.8327637, y: 50.43921}
   m_SizeDelta: {x: -7.6654, y: 100.8783}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &808721937
@@ -8840,36 +8866,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 808721935}
   m_CullTransparentMesh: 1
---- !u!114 &808721940
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 808721935}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: da5faf62ba2b43b408e73d4767661f83, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  DefaultTurret:
-    prefab: {fileID: 6421527964274268530, guid: 441ea7beff4c506408b2cdc098956d7f, type: 3}
-    Type: Default
-    cost: 100
-    upgradedPrefab: {fileID: 6421527964274268530, guid: b56f05ef2136de2479aa57308d7b21c9, type: 3}
-    upgradeCost: 60
-  MissileTurret:
-    prefab: {fileID: 4581371927855041163, guid: e3fc701df375592498bb41759cc6caba, type: 3}
-    Type: Missle
-    cost: 250
-    upgradedPrefab: {fileID: 4581371927855041163, guid: 2f6065f4d339e7f4585d46a728fb3251, type: 3}
-    upgradeCost: 150
-  LaserTurret:
-    prefab: {fileID: 8526955205477702638, guid: da34f99f5103327429db34f8dd778bac, type: 3}
-    Type: Laser
-    cost: 350
-    upgradedPrefab: {fileID: 8526955205477702638, guid: d9707381545d6894589d33bc08a46bdd, type: 3}
-    upgradeCost: 250
 --- !u!1001 &826646949
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10657,10 +10653,10 @@ RectTransform:
   - {fileID: 2120535640}
   m_Father: {fileID: 1742027899}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0.000030518}
-  m_SizeDelta: {x: 1068, y: 475}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &992788386
 MonoBehaviour:
@@ -10822,10 +10818,14 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -24.7
       objectReference: {fileID: 0}
+    - target: {fileID: 4350911657676388493, guid: 817098c39f51edd498cb66a405811211, type: 3}
+      propertyPath: _turretConfig
+      value: 
+      objectReference: {fileID: 11400000, guid: 161c889941ec83142a1fe7eb8baf332d, type: 2}
     - target: {fileID: 5202716084293518777, guid: 817098c39f51edd498cb66a405811211, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 808721940}
+      objectReference: {fileID: 0}
     - target: {fileID: 5202716084293518777, guid: 817098c39f51edd498cb66a405811211, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: SelectLaserTurret
@@ -11112,10 +11112,14 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -24.7
       objectReference: {fileID: 0}
+    - target: {fileID: 4350911657676388493, guid: 817098c39f51edd498cb66a405811211, type: 3}
+      propertyPath: _turretConfig
+      value: 
+      objectReference: {fileID: 11400000, guid: 1999d7b45fbbeee4aacedbaa198170de, type: 2}
     - target: {fileID: 5202716084293518777, guid: 817098c39f51edd498cb66a405811211, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 808721940}
+      objectReference: {fileID: 0}
     - target: {fileID: 5202716084293518777, guid: 817098c39f51edd498cb66a405811211, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: SelectMissileLauncher
@@ -11849,6 +11853,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 393182565}
     m_Modifications:
+    - target: {fileID: 177872568702116290, guid: 967f627ace8d8664591d7fba885115bf, type: 3}
+      propertyPath: _isActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 245717915202961358, guid: 967f627ace8d8664591d7fba885115bf, type: 3}
       propertyPath: m_LocalScale.y
       value: 1
@@ -12482,10 +12490,10 @@ RectTransform:
   - {fileID: 1703618383}
   m_Father: {fileID: 1742027899}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0.000030518}
-  m_SizeDelta: {x: 1068, y: 475}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &1245735952
 PrefabInstance:
@@ -14598,6 +14606,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 393182565}
     m_Modifications:
+    - target: {fileID: 177872568702116290, guid: 967f627ace8d8664591d7fba885115bf, type: 3}
+      propertyPath: _isActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 245717915202961358, guid: 967f627ace8d8664591d7fba885115bf, type: 3}
       propertyPath: m_LocalScale.y
       value: 1
@@ -15486,6 +15498,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 393182565}
     m_Modifications:
+    - target: {fileID: 177872568702116290, guid: 967f627ace8d8664591d7fba885115bf, type: 3}
+      propertyPath: _isActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 245717915202961358, guid: 967f627ace8d8664591d7fba885115bf, type: 3}
       propertyPath: m_LocalScale.y
       value: 1
@@ -16451,6 +16467,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 393182565}
     m_Modifications:
+    - target: {fileID: 177872568702116290, guid: 967f627ace8d8664591d7fba885115bf, type: 3}
+      propertyPath: _isActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 245717915202961358, guid: 967f627ace8d8664591d7fba885115bf, type: 3}
       propertyPath: m_LocalScale.y
       value: 1
@@ -19134,6 +19154,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 393182565}
     m_Modifications:
+    - target: {fileID: 177872568702116290, guid: 967f627ace8d8664591d7fba885115bf, type: 3}
+      propertyPath: _isActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 245717915202961358, guid: 967f627ace8d8664591d7fba885115bf, type: 3}
       propertyPath: m_LocalScale.y
       value: 1
@@ -21127,6 +21151,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 393182565}
     m_Modifications:
+    - target: {fileID: 177872568702116290, guid: 967f627ace8d8664591d7fba885115bf, type: 3}
+      propertyPath: _isActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 245717915202961358, guid: 967f627ace8d8664591d7fba885115bf, type: 3}
       propertyPath: m_LocalScale.y
       value: 1
@@ -21201,6 +21229,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 393182565}
     m_Modifications:
+    - target: {fileID: 177872568702116290, guid: 967f627ace8d8664591d7fba885115bf, type: 3}
+      propertyPath: _isActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 245717915202961358, guid: 967f627ace8d8664591d7fba885115bf, type: 3}
       propertyPath: m_LocalScale.y
       value: 1
@@ -22291,6 +22323,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 393182565}
     m_Modifications:
+    - target: {fileID: 177872568702116290, guid: 967f627ace8d8664591d7fba885115bf, type: 3}
+      propertyPath: _isActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 245717915202961358, guid: 967f627ace8d8664591d7fba885115bf, type: 3}
       propertyPath: m_LocalScale.y
       value: 1
@@ -22810,10 +22846,6 @@ PrefabInstance:
     m_TransformParent: {fileID: 393182565}
     m_Modifications:
     - target: {fileID: 245717915202961358, guid: 967f627ace8d8664591d7fba885115bf, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 245717915202961358, guid: 967f627ace8d8664591d7fba885115bf, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -22853,17 +22885,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 245717915202961358, guid: 967f627ace8d8664591d7fba885115bf, type: 3}
-      propertyPath: m_ConstrainProportionsScale
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4350048918441159473, guid: 967f627ace8d8664591d7fba885115bf, type: 3}
       propertyPath: m_Name
       value: Node
-      objectReference: {fileID: 0}
-    - target: {fileID: 4350048918441159473, guid: 967f627ace8d8664591d7fba885115bf, type: 3}
-      propertyPath: m_Layer
-      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -22963,10 +22987,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4350911657676388493, guid: 817098c39f51edd498cb66a405811211, type: 3}
+      propertyPath: _turretConfig
+      value: 
+      objectReference: {fileID: 11400000, guid: 5b12a4700ecb24f4899015441f1b7d17, type: 2}
+    - target: {fileID: 5202716084293518777, guid: 817098c39f51edd498cb66a405811211, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5202716084293518777, guid: 817098c39f51edd498cb66a405811211, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 808721940}
+      objectReference: {fileID: 0}
     - target: {fileID: 7755974515008652804, guid: 817098c39f51edd498cb66a405811211, type: 3}
       propertyPath: m_Name
       value: ShopTurretItem

@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -19,11 +17,11 @@ public class NodeUI : MonoBehaviour
 
         transform.position = target.GetBuildPosition();
 
-        sellCost.text = target.turretBlueprint.getSellCost.ToString() + "$";
+        sellCost.text = target.CurrentTurretConfig.SellCost.ToString() + "$";
 
         if (!target.isUpgraded)
         {
-            upgradeCost.text = target.turretBlueprint.upgradeCost.ToString() + "$";
+            upgradeCost.text = target.CurrentTurretConfig.UpgradeCost.ToString() + "$";
             buttonUpg.interactable = true;
         }
         else

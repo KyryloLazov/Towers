@@ -1,30 +1,42 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
-using UnityEngine.UIElements;
 
 public class MainMenu : MonoBehaviour
 {
+    [Header("References")]
+    [SerializeField] private string _levelToLoad = "LevelSelect";
+    [SerializeField] private GameObject _menuPanel;
+    [SerializeField] private GameObject _difficulty;
+    
+    [Header("Buttons")]
+    [SerializeField] private Button _playButton;
+    [SerializeField] private Button _exitButton;
+    [SerializeField] private Button _defaultDifficultyButton;
+    [SerializeField] private Button _hardDifficultyButton;
 
-    public string levelToLoad = "LevelSelect";
-    public GameObject Menu;
-    public GameObject Difficulty;
-
-    public void Play()
+    private void OnEnable()
     {
-        if(PlayerPrefs.GetInt("isChosen") == 1)
-        {
-            SceneManager.LoadScene(levelToLoad);
-        }
-        else
-        {
-            ShowDifficulty();
-        }
+        _playButton.onClick.AddListener(Play);
+        _exitButton.onClick.AddListener(Exit);
+        _defaultDifficultyButton.onClick.AddListener(SetDefaultDifficulty);
+        _hardDifficultyButton.onClick.AddListener(SetHardDifficulty);
     }
 
-    public void Exit()
+    private void OnDisable()
+    {
+        _playButton.onClick.RemoveAllListeners();
+        _exitButton.onClick.RemoveAllListeners();
+        _defaultDifficultyButton.onClick.RemoveAllListeners();
+        _hardDifficultyButton.onClick.RemoveAllListeners();
+    }
+
+    private void Play()
+    {
+        ShowDifficulty();
+    }
+
+    private void Exit()
     {
         Debug.Log("Exit");
         Application.Quit();
@@ -32,23 +44,19 @@ public class MainMenu : MonoBehaviour
 
     private void ShowDifficulty()
     {
-        Menu.SetActive(false);
-        Difficulty.SetActive(true);
+        _menuPanel.SetActive(false);
+        _difficulty.SetActive(true);
     }
 
-    public void DefaultDifficulty()
+    private void SetDefaultDifficulty()
     {
         PlayerPrefs.SetInt("isHard", 0);
-        PlayerPrefs.SetInt("isChosen", 1);
-        SceneManager.LoadScene(levelToLoad);
+        SceneManager.LoadScene(_levelToLoad);
     }
 
-    public void HardDifficulty()
+    private void SetHardDifficulty()
     {
         PlayerPrefs.SetInt("isHard", 1);
-        PlayerPrefs.SetInt("isChosen", 1);
-        SceneManager.LoadScene(levelToLoad);
+        SceneManager.LoadScene(_levelToLoad);
     }
-
-
 }

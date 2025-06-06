@@ -1,7 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -10,7 +7,6 @@ public class GameManager : MonoBehaviour
     public static bool isGameOver;
     public static float difficultyRate = 1;
     
-
     private void Start()
     {
         isGameOver = false;

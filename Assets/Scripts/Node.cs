@@ -2,27 +2,34 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.Serialization;
 
 public class Node : MonoBehaviour
 {
-    public Color hoverColor;
-    public Color noMoneyColor;
-    private Color defaultColor;
+    [SerializeField] private bool _isActive;
+    
+    [SerializeField] private Color _hoverColor;
+    [SerializeField] private Color _noMoneyColor;
+    [SerializeField] private Color _activeColor;
+    [SerializeField] private Color _inActiveColor;
+    private Color _defaultColor;
     private Renderer rend;
     public Vector3 PosOffset;
-
-    [HideInInspector]
-    public GameObject turret;
-    [HideInInspector]
-    public TurretBlueprint turretBlueprint;
+    
+    private GameObject _currentTurret;
+    [FormerlySerializedAs("turretBlueprint")] [HideInInspector]
+    public BaseTurretConfig CurrentTurretConfig;
     [HideInInspector]
     public bool isUpgraded = false;
     
 
     private void Start()
-    {       
+    {
         rend = GetComponent<Renderer>();
-        defaultColor = rend.material.color;
+
+        _defaultColor = _isActive ? _activeColor : _inActiveColor;
+        
+        rend.material.color = _defaultColor;
     }
 
     public Vector3 GetBuildPosition()
@@ -32,6 +39,8 @@ public class Node : MonoBehaviour
 
     private void OnMouseEnter()
     {
+        if (!_isActive) return;
+        
         if(EventSystem.current.IsPointerOverGameObject())
         {
             return;
@@ -42,26 +51,28 @@ public class Node : MonoBehaviour
         }
         if (!BuildManager.Instance.hasMoney)
         {
-            rend.material.color = Color.red;
+            rend.material.color = _noMoneyColor;
         }
         else
         {
-            rend.material.color = hoverColor;
+            rend.material.color = _hoverColor;
         }
     }
 
     private void OnMouseExit()
     {
-        rend.material.color = defaultColor;
+        rend.material.color = _defaultColor;
     }
 
     private void OnMouseDown()
     {
+        if (!_isActive) return;
+        
         if (EventSystem.current.IsPointerOverGameObject())
         {
             return;
         }       
-        if(turret != null)
+        if(_currentTurret != null)
         {
             BuildManager.Instance.SelectNode(this);
             return;
@@ -73,40 +84,49 @@ public class Node : MonoBehaviour
         BuildTurret(BuildManager.Instance.GetTurretToBuild());
     }
 
-    public void BuildTurret(TurretBlueprint blueprint)
+    public void BuildTurret(BaseTurretConfig blueprint)
     {
-        if (PlayerStats.Money < blueprint.cost)
+        if (!_isActive) return;
+        
+        if (PlayerStats.Money < blueprint.Cost)
         {
             Debug.Log("Not enough money!");
             return;
         }
-        PlayerStats.Stats.Spend(blueprint.cost);
+        PlayerStats.Stats.Spend(blueprint.Cost);
 
         GameObject effect = Instantiate(BuildManager.Instance.buildEffect, GetBuildPosition(), Quaternion.identity);
-        GameObject _turret = Instantiate(blueprint.prefab, GetBuildPosition(), Quaternion.identity);
-        turret = _turret;
+        GameObject turret = Instantiate(blueprint.TurretPrefab, GetBuildPosition(), Quaternion.identity);
+        _currentTurret = turret;
 
-        turretBlueprint = blueprint;
+        CurrentTurretConfig = blueprint;
         
         Destroy(effect.gameObject, 5f);
     }
 
     public void UpgradeTurret()
     {
-        if (PlayerStats.Money < turretBlueprint.upgradeCost)
+        if (PlayerStats.Money < CurrentTurretConfig.UpgradeCost)
         {
             Debug.Log("Not enough money!");
             return;
         }
-        PlayerStats.Stats.Spend(turretBlueprint.upgradeCost);
+
+        if (!CurrentTurretConfig.IsUpgradable) return;
+        
+        PlayerStats.Stats.Spend(CurrentTurretConfig.UpgradeCost);
 
         GameObject effect = Instantiate(BuildManager.Instance.buildEffect, GetBuildPosition(), Quaternion.identity);
+        
+        BuildManager.Instance.UnregisterTurret(CurrentTurretConfig);
+        Destroy(_currentTurret);
 
-        Destroy(turret);
-
-        GameObject _turret = Instantiate(turretBlueprint.upgradedPrefab, GetBuildPosition(), Quaternion.identity);
-        turret = _turret;
-
+        GameObject turret = Instantiate(CurrentTurretConfig.UpgradedPrefab, GetBuildPosition(), Quaternion.identity);
+        _currentTurret = turret;
+        
+        CurrentTurretConfig = _currentTurret.GetComponent<BaseTurret>().Config;
+        BuildManager.Instance.RegisterTurretBuilt(CurrentTurretConfig);
+        
         isUpgraded = true;
 
         Destroy(effect.gameObject, 5f);
@@ -114,12 +134,13 @@ public class Node : MonoBehaviour
 
     public void SellTurret()
     {
-        PlayerStats.Stats.Add(turretBlueprint.getSellCost);
+        PlayerStats.Stats.Add(CurrentTurretConfig.SellCost);
 
         GameObject effect = Instantiate(BuildManager.Instance.sellEffect, GetBuildPosition(), Quaternion.identity);
 
         Destroy(effect.gameObject, 5f);
-        Destroy(turret);
-        turretBlueprint = null;
+        Destroy(_currentTurret);
+        BuildManager.Instance.UnregisterTurret(CurrentTurretConfig);
+        CurrentTurretConfig = null;
     }
 }

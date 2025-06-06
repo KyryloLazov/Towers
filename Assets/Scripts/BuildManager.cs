@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -7,17 +6,15 @@ public class BuildManager : MonoBehaviour
 {
     public static BuildManager Instance;
     public Text MoneyCounter;
-    private TurretBlueprint turretToBuild;
+    private BaseTurretConfig turretToBuild;
     private Node selectedNode;
     public NodeUI nodeUI;
 
-    public static int NumOfTurrets = 0;
+    public int NumOfTurrets { get; private set; } = 0;
+    public bool canBuilt => turretToBuild != null;
+    public bool hasMoney => PlayerStats.Money >= turretToBuild.Cost;
 
-    public static int NumOfDefTurrets = 0;
-    public static int NumOfRockTurrets = 0;
-    public static int NumOfLasTurrets = 0;
-    public bool canBuilt { get { return turretToBuild != null; } }
-    public bool hasMoney { get { return PlayerStats.Money >= turretToBuild.cost; } }
+    private List<BaseTurretConfig> activeTurretConfigs = new();
 
     public GameObject buildEffect;
     public GameObject sellEffect;
@@ -25,38 +22,19 @@ public class BuildManager : MonoBehaviour
     private void Awake()
     {
         Instance = this;
-        MoneyCounter.text = PlayerStats.Money.ToString() +"$";
-
-        NumOfTurrets = 0;
-        NumOfDefTurrets = 0;
-        NumOfRockTurrets = 0;
-        NumOfLasTurrets = 0;
-}
-    public void SelectTurretToBuild(TurretBlueprint turret)
+        MoneyCounter.text = PlayerStats.Money +"$";
+    }
+    public void SelectTurretToBuild(BaseTurretConfig turret)
     {
         turretToBuild = turret;
 
         DeselectNode();
     }
 
-    public TurretBlueprint GetTurretToBuild()
+    public BaseTurretConfig GetTurretToBuild()
     {
         NumOfTurrets++;
-
-        if(turretToBuild.Type == "Default")
-        {
-            NumOfDefTurrets++;
-        }
-
-        if (turretToBuild.Type == "Missle")
-        {
-            NumOfRockTurrets++;
-        }
-
-        if (turretToBuild.Type == "Laser")
-        {
-            NumOfLasTurrets++;
-        }
+        RegisterTurretBuilt(turretToBuild);
 
         return turretToBuild;
     }
@@ -79,5 +57,26 @@ public class BuildManager : MonoBehaviour
     {
         selectedNode = null;
         nodeUI.Hide();
+    }
+    
+    public void RegisterTurretBuilt(BaseTurretConfig config)
+    {
+        if (config != null)
+        {
+            activeTurretConfigs.Add(config);
+        }
+    }
+    
+    public void UnregisterTurret(BaseTurretConfig config)
+    {
+        if (config != null)
+        {
+            activeTurretConfigs.Remove(config);
+        }
+    }
+
+    public List<BaseTurretConfig> GetActiveTurretConfigs()
+    {
+        return new List<BaseTurretConfig>(activeTurretConfigs);
     }
 }
