@@ -19,7 +19,7 @@ MonoBehaviour:
   <Range>k__BackingField: 10
   <TurnSpeed>k__BackingField: 10
   <IsUpgradable>k__BackingField: 1
-  <UpgradeCost>k__BackingField: 60
+  <UpgradeCost>k__BackingField: 120
   <UpgradedPrefab>k__BackingField: {fileID: 6421527964274268530, guid: b56f05ef2136de2479aa57308d7b21c9, type: 3}
   FireRate: 1
   Damage: 50

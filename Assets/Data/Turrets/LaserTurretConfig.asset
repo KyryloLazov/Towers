@@ -19,7 +19,7 @@ MonoBehaviour:
   <Range>k__BackingField: 18
   <TurnSpeed>k__BackingField: 10
   <IsUpgradable>k__BackingField: 1
-  <UpgradeCost>k__BackingField: 150
+  <UpgradeCost>k__BackingField: 250
   <UpgradedPrefab>k__BackingField: {fileID: 8526955205477702638, guid: d9707381545d6894589d33bc08a46bdd, type: 3}
   <damageOverTime>k__BackingField: 100
   <slowFactor>k__BackingField: 0.5
